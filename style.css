@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background-image: url('WhatsApp Image 2024-02-19 at 22.12.35.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    font-weight: bold; 
+    color: white; 
+    text-shadow: 2px 2px 4px #000;  
+
+    
+}
+
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.skills, .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill, .project {
+    flex-basis: 30%;
+    margin: 10px;
+    box-shadow: 0 0 5px #aaa;
+    padding: 20px;
+}
+
+form > * {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .skill, .project {
+        flex-basis: 80%;
+    }
+}
+
+#about {
+    padding: 4em 2em;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-weight: bold; 
+    color: white; 
+    text-shadow: 2px 2px 4px #000; 
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+section h1, section h2, section p {
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    font-weight: bold; 
+}
+
+.project:hover {
+    transform: scale(1.05); 
+}
+.project {
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+    cursor: pointer; /* Optional: Changes the cursor to indicate it's clickable */
+}

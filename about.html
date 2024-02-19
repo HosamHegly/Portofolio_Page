@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <audio controls autoplay loop>
+        <source src="trois-gymnopedie-gymnopedie-no-1-erik-satie-351s-12664.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Recent Computer Science graduate with a passion for cutting-edge technologies and a drive for innovation.Skilled in software development, automation tools, network and computation and cyber security. Eager to leverage technical expertise to contribute to groundbreaking projects in the high-tech industry.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">QA</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">Gplanny</div>
+            <div class="project">Automated Web Bruteforce</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
